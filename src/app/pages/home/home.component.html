@@ -14,7 +14,8 @@
                 Publicado: {{ video.publishedAt | date }}
             </small>
         </p>
-        <button class="btn btn-outline-primary btn-block">
+        <button class="btn btn-outline-primary btn-block"
+                (click)="mostrarVideo(video)">
             Ver video
         </button>
       </div>
@@ -23,7 +24,7 @@
 
 <div class="row mt-5 mb-5 text-center">
     <div class="col">
-        <button class="btn btn-primary btn-lg">
+        <button class="btn btn-primary btn-lg" (click)="cargarVideos()">
             Cargar mas...
         </button>
     </div>
